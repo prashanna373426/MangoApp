@@ -1,5 +1,5 @@
 from django import forms
-from .models import SurveillanceRecord
+from .models import SurveillanceRecord # type: ignore
 
 class SurveillanceRecordForm(forms.ModelForm):
     class Meta:
