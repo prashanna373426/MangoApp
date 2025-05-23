@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MangoGuard – Smart Mango Surveillance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif']
+          },
+          colors: {
+            emeralddeep: '#064e3b',
+            limeleaf: '#a3e635',
+            mangogold: '#facc15',
+            sand: '#fef9c3',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ecfdf5, #fef3c7);
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- ✅ NAVBAR -->
+  <header class="bg-gradient-to-r from-emeralddeep to-green-700 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="{% static './images/mango-icon.png' %}" class="w-10 h-10 drop-shadow-lg" alt="Logo">
+        <h1 class="text-2xl font-bold tracking-wide">MangoGuard</h1>
+      </div>
+      
+    </div>
+  </header>
+
+  <!-- ✅ HERO SECTION -->
+  <section class="relative h-[95vh] overflow-hidden flex items-center justify-center bg-black">
+    <img src="{% static './images/imagel.jpg' %}"
+         class="absolute inset-0 w-full h-full object-cover brightness-50" alt="Hero Background">
+    <div class="relative z-10 max-w-5xl px-10 text-center text-white">
+      <h2 class="text-5xl font-bold mb-4 leading-tight">Smarter Mango Surveillance<br>Built for Real Growers 🍃</h2>
+      <p class="text-xl text-white/90 mb-6">Detect pests early, track inspection history, and stay in control of your orchard with MangoGuard.</p>
+      <a href="{% url 'record_create' %}" class="inline-block bg-mangogold text-black px-8 py-3 rounded-lg text-lg font-semibold shadow hover:scale-105 hover:bg-yellow-300 transition">➕ Add an Inspection</a>
+    </div>
+  </section>
+
+  <!-- ✅ FEATURES GRID -->
+  <section class="bg-sand py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-emeralddeep mb-12">Why MangoGuard?</h3>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all">
+          <h4 class="text-xl font-bold text-emeralddeep mb-2">📋 Simple Field Inspections</h4>
+          <p class="text-gray-600">Track your property, plants, and pests in seconds using our intuitive grower dashboard.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all">
+          <h4 class="text-xl font-bold text-emeralddeep mb-2">📈 Beautiful Analytics</h4>
+          <p class="text-gray-600">Visualize pest trends and surveillance history using charts built for farmers, not data scientists.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all">
+          <h4 class="text-xl font-bold text-emeralddeep mb-2">🧑‍🌾 Farmer-Friendly Design</h4>
+          <p class="text-gray-600">Big fonts, bright buttons, and a zero-jargon UI built for growers aged 40 to 60.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gradient-to-br from-emeralddeep to-green-600 py-16 text-center text-white">
+  <h3 class="text-3xl font-bold mb-4">🌟 Trusted by Nepal’s Mango Growers</h3>
+  <p class="text-lg mb-6 max-w-xl mx-auto">“MangoGuard has changed the way we inspect our orchards. It’s easy, reliable, and made just for us.”</p>
+  <p class="text-mangogold font-semibold text-lg">– Than Bahadur, Orchard Owner, Butwal</p>
+</section>
+
+
+  <!-- ✅ FOOTER -->
+  <footer class="bg-emeralddeep text-white text-center py-6">
+    <p class="text-lg font-medium">&copy; 2025 MangoGuard • Designed with 💚 for Nepalese growers</p>
+  </footer>
+
+</body>
+</html>
