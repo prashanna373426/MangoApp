@@ -38,7 +38,11 @@
         <img src="{% static './images/mango-icon.png' %}" class="w-10 h-10 drop-shadow-lg" alt="Logo">
         <h1 class="text-2xl font-bold tracking-wide">MangoGuard</h1>
       </div>
-      
+      <nav class="space-x-6 text-lg font-medium">
+        <a href="{% url 'pests' %}" class="hover:text-mangogold transition">Pests</a>
+        <a href="{% url 'about' %}" class="hover:text-mangogold transition">About</a>
+        <a href="{% url 'record_list' %}" class="bg-mangogold text-black px-5 py-2 rounded shadow-md hover:bg-yellow-300 transition">Go to Dashboard</a>
+      </nav>
     </div>
   </header>
 
