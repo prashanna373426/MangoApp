@@ -34,22 +34,14 @@
   <!-- ✅ NAVBAR -->
   <header class="bg-gradient-to-r from-emeralddeep to-green-700 text-white shadow-lg sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <img src="{% static './images/mango-icon.png' %}" class="w-10 h-10 drop-shadow-lg" alt="Logo">
-        <h1 class="text-2xl font-bold tracking-wide">MangoGuard</h1>
-      </div>
-      <nav class="space-x-6 text-lg font-medium">
-        <a href="{% url 'pests' %}" class="hover:text-mangogold transition">Pests</a>
-        <a href="{% url 'about' %}" class="hover:text-mangogold transition">About</a>
-        <a href="{% url 'record_list' %}" class="bg-mangogold text-black px-5 py-2 rounded shadow-md hover:bg-yellow-300 transition">Go to Dashboard</a>
-      </nav>
+
+      
     </div>
   </header>
 
   <!-- ✅ HERO SECTION -->
   <section class="relative h-[95vh] overflow-hidden flex items-center justify-center bg-black">
-    <img src="{% static './images/imagel.jpg' %}"
-         class="absolute inset-0 w-full h-full object-cover brightness-50" alt="Hero Background">
+
     <div class="relative z-10 max-w-5xl px-10 text-center text-white">
       <h2 class="text-5xl font-bold mb-4 leading-tight">Smarter Mango Surveillance<br>Built for Real Growers 🍃</h2>
       <p class="text-xl text-white/90 mb-6">Detect pests early, track inspection history, and stay in control of your orchard with MangoGuard.</p>
